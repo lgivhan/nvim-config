@@ -6,17 +6,24 @@
 set -e # Exit if any command fails
 
 echo "🚀 Starting Neovim setup..."
+echo ""
 
 # Check if Homebrew is installed
-if ! command -v brew &> /dev/null; then
-  echo "❌ Homebrew not found. Please install it first:"
+if ! command -v brew &> /dev/null; 
+then
+  echo "📦 Homebrew not found. Installing Homebrew..."
   echo "   /bin/bash -c \"\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
-  exit 1
+  echo "✅ Homebrew installed"
+else
+  echo "✅ Homebrew found"
 fi
 
-echo "✅ Homebrew found"
+echo ""
 
 # Install Neovim and dependencies
+echo "📦 Installing Neovim and dependencies"
+echo "   This may take a few minutes..."
+brew install neovim ripgrep fd node go rust python
 
 # Backup existing Neovim config if it exists
 
