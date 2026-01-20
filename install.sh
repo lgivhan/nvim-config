@@ -9,10 +9,10 @@ echo "🚀 Starting Neovim setup..."
 echo ""
 
 # Check if Homebrew is installed
-if ! command -v brew &> /dev/null; 
+if ! command -v brew &> /dev/null; # Check if homebrew doesn't exist
 then
   echo "📦 Homebrew not found. Installing Homebrew..."
-  echo "   /bin/bash -c \"\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   echo "✅ Homebrew installed"
 else
   echo "✅ Homebrew found"
