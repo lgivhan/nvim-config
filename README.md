@@ -19,7 +19,6 @@ git clone https://github.com/lgivhan/dotfiles.git ~/dotfiles
 
 # Run the install script
 cd ~/dotfiles
-chmod +x install.sh
 ./install.sh
 ```
 
