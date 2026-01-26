@@ -42,6 +42,9 @@ vim.keymap.set('n', '<leader>gh', require('telescope.builtin').git_stash, { desc
 vim.keymap.set('n', '<leader>gb', require('telescope.builtin').git_branches, { desc = '[G]it [B]ranches' })
 vim.keymap.set('n', '<leader>gc', require('telescope.builtin').git_commits, { desc = '[G]it [C]ommits' })
 
+-- Git
+vim.keymap.set('n', '<leader>gs', ':Gs ', { desc = 'Git Sync (Add, Commit, Push)' })
+
 -- CodeCompanion
 vim.keymap.set('n', '<leader>ai', '<cmd>CodeCompanionChat Toggle<cr>', { desc = 'CodeCompanionChat Toggle' })
 
